@@ -1,0 +1,18 @@
+Analysis & Synthesis Status : Successful - Mon Jul 12 20:28:00 2021
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Revision Name : calcula_seno_f
+Top-level Entity Name : calcula_seno_f
+Family : Cyclone IV GX
+Total logic elements : 4,091
+    Total combinational functions : 3,272
+    Dedicated logic registers : 2,398
+Total registers : 2398
+Total pins : 289
+Total virtual pins : 0
+Total memory bits : 1,253
+Embedded Multiplier 9-bit elements : 76
+Total GXB Receiver Channel PCS : 0
+Total GXB Receiver Channel PMA : 0
+Total GXB Transmitter Channel PCS : 0
+Total GXB Transmitter Channel PMA : 0
+Total PLLs : 0
