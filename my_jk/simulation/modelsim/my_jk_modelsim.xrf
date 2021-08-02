@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, G:/Meu Drive/utfpr/2021-2/logica_reconfiguravel/reconfigurable_logic/my_jk/my_jk.vhd
+source_file = 1, G:/Meu Drive/utfpr/2021-2/logica_reconfiguravel/reconfigurable_logic/my_jk/Waveform.vwf
+source_file = 1, G:/Meu Drive/utfpr/2021-2/logica_reconfiguravel/reconfigurable_logic/my_jk/db/my_jk.cbx.xml
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = my_jk
+instance = comp, \clk~I , clk, my_jk, 1
+instance = comp, \j~I , j, my_jk, 1
+instance = comp, \k~I , k, my_jk, 1
+instance = comp, \aux~0 , aux~0, my_jk, 1
+instance = comp, \q~I , q, my_jk, 1

@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dG:\Meu Drive\utfpr\2021-2\logica_reconfiguravel\reconfigurable_logic\vhdl_test\simulation\qsim
+vvhdl_test
+Z1 I<o3fF71=EN2<N^>HNIUY32
+Z2 VUO6;2BVa4Y=G3?nz1blWA0
+Z3 dG:\Meu Drive\utfpr\2021-2\logica_reconfiguravel\reconfigurable_logic\vhdl_test\simulation\qsim
+Z4 w1627335790
+Z5 8vhdl_test.vo
+Z6 Fvhdl_test.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+!i10b 1
+Z9 !s100 ]HVYS64m:_le2HGfSC_6a2
+!s85 0
+Z10 !s108 1627335792.658000
+Z11 !s107 vhdl_test.vo|
+Z12 !s90 -work|work|vhdl_test.vo|
+!s101 -O0
+vvhdl_test_vlg_check_tst
+!i10b 1
+!s100 P@323C8fXPHLblRl=3nDg2
+IzUfJ^i_:9;F<eR7GI^CL42
+VUle=15=NkC??_6Cg37fiO0
+R3
+Z13 w1627335789
+Z14 8vhdl_test.vt
+Z15 Fvhdl_test.vt
+L0 59
+R7
+r1
+!s85 0
+31
+Z16 !s108 1627335792.990000
+Z17 !s107 vhdl_test.vt|
+Z18 !s90 -work|work|vhdl_test.vt|
+!s101 -O0
+R8
+vvhdl_test_vlg_sample_tst
+!i10b 1
+!s100 bNBVk8g6]SfE7NPEE7_:Y2
+IRA^JdOSB8ILYkl6L@0YeG0
+VnV1OoTn:c5gfG[>0J_>Lh1
+R3
+R13
+R14
+R15
+L0 29
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
+vvhdl_test_vlg_vec_tst
+!i10b 1
+!s100 A[DKTDiIXEgOUY^S_00]M3
+IN_e2IdhQSS84KB_f1c[zm1
+VlPPND2LBB3<QB5YN8MjST1
+R3
+R13
+R14
+R15
+L0 154
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8

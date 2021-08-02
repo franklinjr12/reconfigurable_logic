@@ -1,0 +1,11 @@
+|my_jk
+j => process_0.IN0
+j => process_0.IN0
+j => process_0.IN0
+k => process_0.IN1
+k => process_0.IN1
+k => process_0.IN1
+clk => aux.CLK
+q <= aux.DB_MAX_OUTPUT_PORT_TYPE
+
+
