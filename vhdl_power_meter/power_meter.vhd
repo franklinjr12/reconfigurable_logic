@@ -2,27 +2,33 @@ library ieee;
 use ieee.std_logic_1164.all;
 USE ieee.numeric_std.ALL;
 
+-- entity power_meter is port (
+-- 	clear,clk: IN std_logic;	
+-- 	power_factor: buffer integer;
+-- 	theta_out: buffer integer;
+-- 	ready: OUT std_logic);
+-- end power_meter;
+
 entity power_meter is port (
 	clear,clk: IN std_logic;	
-	r4: in integer;
-	r1: out integer;
-	r2: out integer;
-	r3: out integer;
 	voltage_rms, current_rms, apparent_power: buffer integer;
 	power_factor: buffer integer;
 	real_power, reactive_power: out integer;
-	theta_out: out integer;
+	theta_out: buffer integer;
 	ready: OUT std_logic);
 end power_meter;
 
 architecture core of power_meter is 
 
-	signal phase : integer := 0;
-	signal b_scaled_up: std_logic := '0';
+	-- signal voltage_rms, current_rms, apparent_power: integer := 0;
+	-- signal real_power, reactive_power: integer;
+	
 	signal b_voltage_rms: std_logic := '0';
 	signal b_current_rms: std_logic := '0';
 	signal b_apparent_power: std_logic := '0';
-	signal counter: integer := 0;	
+
+	signal a2: integer := 0;
+	signal v2: integer := 0;
 
 	function mysqrt (constant x: integer) return integer;
 	function mysqrt (constant x: integer) return integer is
@@ -60,57 +66,34 @@ architecture core of power_meter is
 		 t_int_array := (0,0,67,124,163,180,172,139,87,23,10,1,-151,-176,-176,-151,-105,-44,23,87,139,172,180,163,124,67,1,-66,-123,-162,-179,-171);
 	constant current1 :
 		 t_int_array := (0,0,1,3,4,4,4,3,2,0,-1,-2,-4,-4,-4,-4,-2,-1,0,2,3,4,4,4,3,1,0,-1,-3,-4,-4,-4);
-		 
-	signal voltage_scaled_up: t_int_array := (0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
-	signal current_scaled_up: t_int_array := (0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0);
-begin
 
-	process (clk, clear) --scaling up the integers
-	begin		
-		if (clk'event and clk='1' and clear='1') then				
-		end if;
-		if (clk'event and clk='1') then
-			for i in voltage1'range loop
-				voltage_scaled_up(i) <= voltage1(i)*(2**16);
-				current_scaled_up(i) <= current1(i)*(2**16);
-			end loop;
-			b_scaled_up <= '1';	
-		end if;
-	end process;
+begin
 
 	process (clk) --calculate voltage rms
 	variable v: integer := 0;
 	begin
-		if (clk'event and clk='1' and b_scaled_up='1' and b_voltage_rms = '0') then
+		if (clk'event and clk='1' and b_voltage_rms = '0') then
 			b_voltage_rms <= '1';
+			v := 0;
 			for i in voltage1'range loop				
 				v := v+(voltage1(i)*voltage1(i));				
 			end loop;
-			r1 <= mysqrt(v*100/voltage1'length); 
-			voltage_rms <= mysqrt(v*100/voltage1'length)/10;
+			voltage_rms <= mysqrt(v/voltage1'length);
 		end if;
 	end process;
 
 	process (clk) --calculate current rms
 	variable v: integer := 0;
 	begin
-		if (clk'event and clk='1' and b_scaled_up='1' and b_current_rms = '0') then
+		if (clk'event and clk='1' and b_current_rms = '0') then
 			b_current_rms <= '1';
+			v := 0;
 			for i in current1'range loop				
 				v := v+(current1(i)*current1(i));				
 			end loop;
-			r2 <= mysqrt(v/current1'length);
 			current_rms <= mysqrt(v/current1'length);
 		end if;
 	end process;	
-
---	process (clk) --dummy
---	begin
---		if (clk'event and clk='1' and b_voltage_rms='1') then
---			counter <= counter + 1;			
---			r3 <= mysqrt(3600);
---		end if;
---	end process;
 
 	process (clk) --calculate apparent power	
 	begin
@@ -128,38 +111,48 @@ begin
 	variable ex: std_logic := '0';
 	variable aux: std_logic := '0';
 	begin
-		if (clk'event and clk='1' and b_apparent_power='1') then			
+		if (clk'event and clk='1' and b_apparent_power='1') then	
+			voltage_counter := 0;
+			ex := '0';
+			aux := '0';		
 			for i in voltage1'range loop
-				exit when (ex='1' or i=(voltage1'length-1));
-				temp := voltage1(i);				
-					if ((temp >= 0 and voltage1(i+1) < 0) or (temp <= 0 and voltage1(i+1) > 0)) then
-						if (aux='1') then
-							ex := '1';
-						else
-							aux := '1';
+				if (ex='0' and i<(voltage1'length-1)) then
+					temp := voltage1(i);				
+						if ((temp >= 0 and voltage1(i-1) < 0) or (temp <= 0 and voltage1(i-1) > 0)) then
+							if (aux='1') then								
+								ex := '1';
+								v2 <= i;
+							else
+								aux := '1';
+							end if;
 						end if;
-					end if;
-				voltage_counter := i;
+					voltage_counter := voltage_counter + 1;
+				end if;
+				voltage_counter := v2;
 			end loop;
+			current_counter := 0;
+			ex := '0';
+			aux := '0';
 			for i in current1'range loop
-				exit when (ex='1' or i=(voltage1'length-1));
-				temp := current1(i);				
-					if ((temp >= 0 and current1(i+1) < 0) or (temp <= 0 and current1(i+1) > 0)) then
-						if (aux='1') then
-							ex := '1';
-						else
-							aux := '1';
+				if (ex='0' and i<(current1'length-1)) then									
+					temp := current1(i);				
+						if ((temp >= 0 and current1(i-1) < 0) or (temp <= 0 and current1(i-1) > 0)) then
+							if (aux='1') then								
+								ex := '1';
+								a2 <= i;
+							else
+								aux := '1';
+							end if;
 						end if;
-					end if;
-				current_counter := i;
+					current_counter := current_counter + 1;
+				end if;
+				current_counter := a2;
 			end loop;	
-			theta := (((((voltage_counter - current_counter)*100*2**16)/833))*180);
-			theta_out <= (((((voltage_counter - current_counter)*100*2**16)/833))*180);
-			theta := theta/(2**16);
-			power_factor <= mysin(theta); --scaled by 100		
+			theta_out <= (((((current_counter-voltage_counter)*100*(2**16/833))))*180)/(2**16);
+			power_factor <= mysin(theta_out); --scaled by 100			
 			real_power <= (apparent_power * power_factor)/100;
 			reactive_power <= (apparent_power * (100 - power_factor))/100;
-		
+			ready <= '1';
 		end if;
 	end process;	
 	

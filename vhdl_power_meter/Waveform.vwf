@@ -48,7 +48,7 @@ SIGNAL("r1")
 	SIGNAL_TYPE = BUS;
 	WIDTH = 32;
 	LSB_INDEX = 0;
-	DIRECTION = OUTPUT;
+	DIRECTION = INPUT;
 	PARENT = "";
 }
 
@@ -3679,9 +3679,9 @@ TRANSITION_LIST("clk")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 200;
-			LEVEL 0 FOR 250.0;
-			LEVEL 1 FOR 250.0;
+			REPEAT = 10;
+			LEVEL 0 FOR 5000.0;
+			LEVEL 1 FOR 5000.0;
 		}
 	}
 }
@@ -9283,7 +9283,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "power_factor";
+	CHANNEL = "theta_out";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 232;
@@ -9293,7 +9293,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "power_factor[31]";
+	CHANNEL = "theta_out[31]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 233;
@@ -9303,7 +9303,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "power_factor[30]";
+	CHANNEL = "theta_out[30]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 234;
@@ -9313,7 +9313,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "power_factor[29]";
+	CHANNEL = "theta_out[29]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 235;
@@ -9323,7 +9323,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "power_factor[28]";
+	CHANNEL = "theta_out[28]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 236;
@@ -9333,7 +9333,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "power_factor[27]";
+	CHANNEL = "theta_out[27]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 237;
@@ -9343,7 +9343,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "power_factor[26]";
+	CHANNEL = "theta_out[26]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 238;
@@ -9353,7 +9353,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "power_factor[25]";
+	CHANNEL = "theta_out[25]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 239;
@@ -9363,7 +9363,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "power_factor[24]";
+	CHANNEL = "theta_out[24]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 240;
@@ -9373,7 +9373,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "power_factor[23]";
+	CHANNEL = "theta_out[23]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 241;
@@ -9383,7 +9383,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "power_factor[22]";
+	CHANNEL = "theta_out[22]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 242;
@@ -9393,7 +9393,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "power_factor[21]";
+	CHANNEL = "theta_out[21]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 243;
@@ -9403,7 +9403,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "power_factor[20]";
+	CHANNEL = "theta_out[20]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 244;
@@ -9413,7 +9413,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "power_factor[19]";
+	CHANNEL = "theta_out[19]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 245;
@@ -9423,7 +9423,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "power_factor[18]";
+	CHANNEL = "theta_out[18]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 246;
@@ -9433,7 +9433,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "power_factor[17]";
+	CHANNEL = "theta_out[17]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 247;
@@ -9443,7 +9443,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "power_factor[16]";
+	CHANNEL = "theta_out[16]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 248;
@@ -9453,7 +9453,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "power_factor[15]";
+	CHANNEL = "theta_out[15]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 249;
@@ -9463,7 +9463,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "power_factor[14]";
+	CHANNEL = "theta_out[14]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 250;
@@ -9473,7 +9473,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "power_factor[13]";
+	CHANNEL = "theta_out[13]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 251;
@@ -9483,7 +9483,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "power_factor[12]";
+	CHANNEL = "theta_out[12]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 252;
@@ -9493,7 +9493,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "power_factor[11]";
+	CHANNEL = "theta_out[11]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 253;
@@ -9503,7 +9503,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "power_factor[10]";
+	CHANNEL = "theta_out[10]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 254;
@@ -9513,7 +9513,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "power_factor[9]";
+	CHANNEL = "theta_out[9]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 255;
@@ -9523,7 +9523,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "power_factor[8]";
+	CHANNEL = "theta_out[8]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 256;
@@ -9533,7 +9533,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "power_factor[7]";
+	CHANNEL = "theta_out[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 257;
@@ -9543,7 +9543,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "power_factor[6]";
+	CHANNEL = "theta_out[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 258;
@@ -9553,7 +9553,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "power_factor[5]";
+	CHANNEL = "theta_out[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 259;
@@ -9563,7 +9563,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "power_factor[4]";
+	CHANNEL = "theta_out[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 260;
@@ -9573,7 +9573,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "power_factor[3]";
+	CHANNEL = "theta_out[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 261;
@@ -9583,7 +9583,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "power_factor[2]";
+	CHANNEL = "theta_out[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 262;
@@ -9593,7 +9593,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "power_factor[1]";
+	CHANNEL = "theta_out[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 263;
@@ -9603,7 +9603,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "power_factor[0]";
+	CHANNEL = "theta_out[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 264;
@@ -9613,7 +9613,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "reactive_power";
+	CHANNEL = "power_factor";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 265;
@@ -9623,7 +9623,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "reactive_power[31]";
+	CHANNEL = "power_factor[31]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 266;
@@ -9633,7 +9633,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "reactive_power[30]";
+	CHANNEL = "power_factor[30]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 267;
@@ -9643,7 +9643,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "reactive_power[29]";
+	CHANNEL = "power_factor[29]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 268;
@@ -9653,7 +9653,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "reactive_power[28]";
+	CHANNEL = "power_factor[28]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 269;
@@ -9663,7 +9663,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "reactive_power[27]";
+	CHANNEL = "power_factor[27]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 270;
@@ -9673,7 +9673,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "reactive_power[26]";
+	CHANNEL = "power_factor[26]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 271;
@@ -9683,7 +9683,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "reactive_power[25]";
+	CHANNEL = "power_factor[25]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 272;
@@ -9693,7 +9693,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "reactive_power[24]";
+	CHANNEL = "power_factor[24]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 273;
@@ -9703,7 +9703,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "reactive_power[23]";
+	CHANNEL = "power_factor[23]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 274;
@@ -9713,7 +9713,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "reactive_power[22]";
+	CHANNEL = "power_factor[22]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 275;
@@ -9723,7 +9723,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "reactive_power[21]";
+	CHANNEL = "power_factor[21]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 276;
@@ -9733,7 +9733,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "reactive_power[20]";
+	CHANNEL = "power_factor[20]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 277;
@@ -9743,7 +9743,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "reactive_power[19]";
+	CHANNEL = "power_factor[19]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 278;
@@ -9753,7 +9753,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "reactive_power[18]";
+	CHANNEL = "power_factor[18]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 279;
@@ -9763,7 +9763,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "reactive_power[17]";
+	CHANNEL = "power_factor[17]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 280;
@@ -9773,7 +9773,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "reactive_power[16]";
+	CHANNEL = "power_factor[16]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 281;
@@ -9783,7 +9783,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "reactive_power[15]";
+	CHANNEL = "power_factor[15]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 282;
@@ -9793,7 +9793,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "reactive_power[14]";
+	CHANNEL = "power_factor[14]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 283;
@@ -9803,7 +9803,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "reactive_power[13]";
+	CHANNEL = "power_factor[13]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 284;
@@ -9813,7 +9813,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "reactive_power[12]";
+	CHANNEL = "power_factor[12]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 285;
@@ -9823,7 +9823,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "reactive_power[11]";
+	CHANNEL = "power_factor[11]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 286;
@@ -9833,7 +9833,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "reactive_power[10]";
+	CHANNEL = "power_factor[10]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 287;
@@ -9843,7 +9843,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "reactive_power[9]";
+	CHANNEL = "power_factor[9]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 288;
@@ -9853,7 +9853,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "reactive_power[8]";
+	CHANNEL = "power_factor[8]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 289;
@@ -9863,7 +9863,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "reactive_power[7]";
+	CHANNEL = "power_factor[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 290;
@@ -9873,7 +9873,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "reactive_power[6]";
+	CHANNEL = "power_factor[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 291;
@@ -9883,7 +9883,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "reactive_power[5]";
+	CHANNEL = "power_factor[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 292;
@@ -9893,7 +9893,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "reactive_power[4]";
+	CHANNEL = "power_factor[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 293;
@@ -9903,7 +9903,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "reactive_power[3]";
+	CHANNEL = "power_factor[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 294;
@@ -9913,7 +9913,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "reactive_power[2]";
+	CHANNEL = "power_factor[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 295;
@@ -9923,7 +9923,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "reactive_power[1]";
+	CHANNEL = "power_factor[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 296;
@@ -9933,7 +9933,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "reactive_power[0]";
+	CHANNEL = "power_factor[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 297;
@@ -9943,7 +9943,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "real_power";
+	CHANNEL = "reactive_power";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 298;
@@ -9953,7 +9953,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "real_power[31]";
+	CHANNEL = "reactive_power[31]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 299;
@@ -9963,7 +9963,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "real_power[30]";
+	CHANNEL = "reactive_power[30]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 300;
@@ -9973,7 +9973,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "real_power[29]";
+	CHANNEL = "reactive_power[29]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 301;
@@ -9983,7 +9983,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "real_power[28]";
+	CHANNEL = "reactive_power[28]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 302;
@@ -9993,7 +9993,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "real_power[27]";
+	CHANNEL = "reactive_power[27]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 303;
@@ -10003,7 +10003,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "real_power[26]";
+	CHANNEL = "reactive_power[26]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 304;
@@ -10013,7 +10013,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "real_power[25]";
+	CHANNEL = "reactive_power[25]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 305;
@@ -10023,7 +10023,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "real_power[24]";
+	CHANNEL = "reactive_power[24]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 306;
@@ -10033,7 +10033,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "real_power[23]";
+	CHANNEL = "reactive_power[23]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 307;
@@ -10043,7 +10043,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "real_power[22]";
+	CHANNEL = "reactive_power[22]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 308;
@@ -10053,7 +10053,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "real_power[21]";
+	CHANNEL = "reactive_power[21]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 309;
@@ -10063,7 +10063,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "real_power[20]";
+	CHANNEL = "reactive_power[20]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 310;
@@ -10073,7 +10073,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "real_power[19]";
+	CHANNEL = "reactive_power[19]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 311;
@@ -10083,7 +10083,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "real_power[18]";
+	CHANNEL = "reactive_power[18]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 312;
@@ -10093,7 +10093,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "real_power[17]";
+	CHANNEL = "reactive_power[17]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 313;
@@ -10103,7 +10103,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "real_power[16]";
+	CHANNEL = "reactive_power[16]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 314;
@@ -10113,7 +10113,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "real_power[15]";
+	CHANNEL = "reactive_power[15]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 315;
@@ -10123,7 +10123,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "real_power[14]";
+	CHANNEL = "reactive_power[14]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 316;
@@ -10133,7 +10133,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "real_power[13]";
+	CHANNEL = "reactive_power[13]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 317;
@@ -10143,7 +10143,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "real_power[12]";
+	CHANNEL = "reactive_power[12]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 318;
@@ -10153,7 +10153,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "real_power[11]";
+	CHANNEL = "reactive_power[11]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 319;
@@ -10163,7 +10163,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "real_power[10]";
+	CHANNEL = "reactive_power[10]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 320;
@@ -10173,7 +10173,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "real_power[9]";
+	CHANNEL = "reactive_power[9]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 321;
@@ -10183,7 +10183,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "real_power[8]";
+	CHANNEL = "reactive_power[8]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 322;
@@ -10193,7 +10193,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "real_power[7]";
+	CHANNEL = "reactive_power[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 323;
@@ -10203,7 +10203,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "real_power[6]";
+	CHANNEL = "reactive_power[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 324;
@@ -10213,7 +10213,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "real_power[5]";
+	CHANNEL = "reactive_power[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 325;
@@ -10223,7 +10223,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "real_power[4]";
+	CHANNEL = "reactive_power[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 326;
@@ -10233,7 +10233,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "real_power[3]";
+	CHANNEL = "reactive_power[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 327;
@@ -10243,7 +10243,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "real_power[2]";
+	CHANNEL = "reactive_power[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 328;
@@ -10253,7 +10253,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "real_power[1]";
+	CHANNEL = "reactive_power[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 329;
@@ -10263,7 +10263,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "real_power[0]";
+	CHANNEL = "reactive_power[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 330;
@@ -10273,7 +10273,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "theta_out";
+	CHANNEL = "real_power";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 331;
@@ -10283,7 +10283,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "theta_out[31]";
+	CHANNEL = "real_power[31]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 332;
@@ -10293,7 +10293,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "theta_out[30]";
+	CHANNEL = "real_power[30]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 333;
@@ -10303,7 +10303,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "theta_out[29]";
+	CHANNEL = "real_power[29]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 334;
@@ -10313,7 +10313,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "theta_out[28]";
+	CHANNEL = "real_power[28]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 335;
@@ -10323,7 +10323,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "theta_out[27]";
+	CHANNEL = "real_power[27]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 336;
@@ -10333,7 +10333,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "theta_out[26]";
+	CHANNEL = "real_power[26]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 337;
@@ -10343,7 +10343,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "theta_out[25]";
+	CHANNEL = "real_power[25]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 338;
@@ -10353,7 +10353,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "theta_out[24]";
+	CHANNEL = "real_power[24]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 339;
@@ -10363,7 +10363,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "theta_out[23]";
+	CHANNEL = "real_power[23]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 340;
@@ -10373,7 +10373,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "theta_out[22]";
+	CHANNEL = "real_power[22]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 341;
@@ -10383,7 +10383,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "theta_out[21]";
+	CHANNEL = "real_power[21]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 342;
@@ -10393,7 +10393,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "theta_out[20]";
+	CHANNEL = "real_power[20]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 343;
@@ -10403,7 +10403,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "theta_out[19]";
+	CHANNEL = "real_power[19]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 344;
@@ -10413,7 +10413,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "theta_out[18]";
+	CHANNEL = "real_power[18]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 345;
@@ -10423,7 +10423,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "theta_out[17]";
+	CHANNEL = "real_power[17]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 346;
@@ -10433,7 +10433,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "theta_out[16]";
+	CHANNEL = "real_power[16]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 347;
@@ -10443,7 +10443,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "theta_out[15]";
+	CHANNEL = "real_power[15]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 348;
@@ -10453,7 +10453,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "theta_out[14]";
+	CHANNEL = "real_power[14]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 349;
@@ -10463,7 +10463,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "theta_out[13]";
+	CHANNEL = "real_power[13]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 350;
@@ -10473,7 +10473,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "theta_out[12]";
+	CHANNEL = "real_power[12]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 351;
@@ -10483,7 +10483,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "theta_out[11]";
+	CHANNEL = "real_power[11]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 352;
@@ -10493,7 +10493,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "theta_out[10]";
+	CHANNEL = "real_power[10]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 353;
@@ -10503,7 +10503,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "theta_out[9]";
+	CHANNEL = "real_power[9]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 354;
@@ -10513,7 +10513,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "theta_out[8]";
+	CHANNEL = "real_power[8]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 355;
@@ -10523,7 +10523,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "theta_out[7]";
+	CHANNEL = "real_power[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 356;
@@ -10533,7 +10533,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "theta_out[6]";
+	CHANNEL = "real_power[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 357;
@@ -10543,7 +10543,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "theta_out[5]";
+	CHANNEL = "real_power[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 358;
@@ -10553,7 +10553,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "theta_out[4]";
+	CHANNEL = "real_power[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 359;
@@ -10563,7 +10563,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "theta_out[3]";
+	CHANNEL = "real_power[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 360;
@@ -10573,7 +10573,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "theta_out[2]";
+	CHANNEL = "real_power[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 361;
@@ -10583,7 +10583,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "theta_out[1]";
+	CHANNEL = "real_power[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 362;
@@ -10593,7 +10593,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "theta_out[0]";
+	CHANNEL = "real_power[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Signed;
 	TREE_INDEX = 363;
